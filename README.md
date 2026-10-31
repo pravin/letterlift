@@ -14,7 +14,7 @@ ads, and it works fully offline, including the daily puzzle.
 
 A sister game to [letterlock](https://github.com/pravin/letterlock).
 
-![letterlift mid-puzzle](img/playing.png)
+![Climbing from GLOW to CLUE in letterlift](img/demo.gif)
 
 ## Features
 
@@ -111,6 +111,8 @@ Statistics are saved to:
 | Revealing the answer | Statistics |
 | ![A step that changes two letters](img/error.png) | ![No-colour mode](img/no-color.png) |
 | A step that changes two letters | No-colour mode |
+| ![Mid-puzzle](img/playing.png) | |
+| Mid-puzzle | |
 
 ## Development
 
