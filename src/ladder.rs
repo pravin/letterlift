@@ -363,11 +363,11 @@ mod tests {
     #[test]
     fn test_custom_puzzle_with_rare_words() {
         let dict = Dictionary::new(4).unwrap();
-        // "coll" is accepted but rare; it can still be a custom goal
-        let p = Puzzle::custom(&dict, "warm", "coll").unwrap();
+        // "coed" is accepted but rare; it can still be a custom goal
+        let p = Puzzle::custom(&dict, "warm", "coed").unwrap();
         let route = Game::new(&dict, p).shortest_route();
         assert_eq!(route.len() as u32, p.par + 1);
-        assert_eq!(route.last(), Some(&"coll"));
+        assert_eq!(route.last(), Some(&"coed"));
         // Only the goal itself is rare
         for w in &route[..route.len() - 1] {
             assert!(dict.is_familiar(dict.index_of(w).unwrap()), "{w}");

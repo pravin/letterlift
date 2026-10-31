@@ -4,6 +4,7 @@ acne
 acre
 aide
 akin
+alas
 ally
 also
 amen
@@ -58,11 +59,12 @@ bias
 bike
 bill
 bind
-bing
 bird
 bite
 blah
+blew
 bloc
+blog
 blow
 blue
 blur
@@ -172,7 +174,6 @@ curl
 cute
 dame
 damp
-dang
 dare
 dark
 darn
@@ -191,6 +192,7 @@ deed
 deep
 deer
 dell
+demo
 dent
 deny
 desk
@@ -245,11 +247,13 @@ edit
 else
 envy
 epic
+euro
 even
 ever
 evil
 exam
 exit
+expo
 face
 fact
 fade
@@ -367,6 +371,7 @@ hall
 halo
 halt
 hand
+hang
 hard
 hare
 harm
@@ -385,6 +390,7 @@ heat
 heck
 heel
 heir
+held
 helm
 help
 herb
@@ -418,6 +424,7 @@ hung
 hunt
 hurt
 hymn
+hype
 icon
 idea
 idle
@@ -540,13 +547,13 @@ mean
 meat
 meet
 melt
+meme
 memo
 menu
 mere
 mesa
 mesh
 mess
-meta
 mice
 mild
 mile
@@ -554,6 +561,7 @@ milk
 mill
 mind
 mine
+mini
 mint
 miss
 mist
@@ -583,6 +591,7 @@ neat
 neck
 need
 neon
+nerd
 nest
 next
 nice
@@ -601,6 +610,7 @@ null
 numb
 oath
 obey
+okay
 once
 only
 onto
@@ -614,6 +624,7 @@ pace
 pack
 pact
 page
+paid
 pain
 pair
 pale
@@ -654,7 +665,6 @@ poke
 pole
 poll
 polo
-poly
 pond
 pony
 pool
@@ -667,6 +677,7 @@ post
 pour
 pray
 prey
+prom
 prop
 puck
 puff
@@ -833,6 +844,7 @@ swap
 sway
 swim
 sync
+taco
 tail
 take
 tale
@@ -846,7 +858,6 @@ task
 taxi
 team
 tear
-tech
 teen
 tell
 tend
@@ -921,12 +932,12 @@ verb
 very
 vest
 veto
+vibe
 vice
 view
 vile
 vine
 visa
-vita
 void
 vote
 wade
@@ -960,6 +971,7 @@ whoa
 whom
 wide
 wife
+wiki
 wild
 will
 wind
@@ -982,7 +994,6 @@ work
 worm
 worn
 wrap
-yang
 yard
 yarn
 yeah

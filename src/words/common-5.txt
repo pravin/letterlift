@@ -6,7 +6,6 @@ abuse
 actor
 acute
 adapt
-admin
 admit
 adobe
 adopt
@@ -87,6 +86,7 @@ baton
 beach
 beard
 beast
+began
 begin
 begun
 being
@@ -114,7 +114,7 @@ blink
 bliss
 blitz
 block
-bloke
+blond
 blood
 bloom
 blown
@@ -182,6 +182,7 @@ chair
 chalk
 champ
 chant
+chaos
 charm
 chart
 chase
@@ -230,10 +231,13 @@ cobra
 cocoa
 colon
 color
+combo
 comet
 comfy
 comic
+condo
 coral
+corps
 couch
 cough
 could
@@ -248,6 +252,7 @@ crash
 crawl
 crazy
 cream
+creed
 creek
 creep
 crest
@@ -275,6 +280,7 @@ dealt
 debit
 debut
 decay
+decor
 deity
 delay
 delta
@@ -288,6 +294,7 @@ devil
 diary
 digit
 dirty
+disco
 ditch
 dodge
 doing
@@ -312,6 +319,7 @@ drive
 drone
 drove
 drown
+dryer
 dummy
 dusty
 dwarf
@@ -326,6 +334,7 @@ elbow
 elder
 elect
 elite
+email
 empty
 enemy
 enjoy
@@ -353,13 +362,16 @@ fancy
 fatal
 fatty
 fault
+fauna
 favor
 feast
 fence
 ferry
 fetch
 fever
+fewer
 fiber
+fibre
 field
 fiery
 fifth
@@ -410,6 +422,7 @@ funky
 funny
 furry
 fuzzy
+gamer
 gamma
 gauge
 genre
@@ -463,6 +476,7 @@ haunt
 haven
 havoc
 hazel
+heard
 heart
 heath
 heavy
@@ -480,11 +494,11 @@ human
 humid
 humor
 hurry
-hydro
 hyper
 ideal
 image
 imply
+inbox
 index
 inner
 input
@@ -527,6 +541,7 @@ light
 limit
 linen
 liner
+litre
 liver
 lobby
 local
@@ -571,7 +586,8 @@ merry
 messy
 metal
 meter
-micro
+metre
+metro
 midst
 might
 milky
@@ -587,7 +603,6 @@ month
 moody
 moose
 moral
-morse
 motel
 motor
 motto
@@ -607,8 +622,10 @@ naval
 needy
 nerve
 never
+newer
 newly
 nexus
+nicer
 niche
 niece
 night
@@ -650,6 +667,7 @@ panel
 panic
 paper
 party
+pasta
 paste
 patch
 pause
@@ -670,6 +688,7 @@ pinch
 piper
 pitch
 pivot
+pixel
 pizza
 place
 plain
@@ -694,9 +713,11 @@ print
 prior
 prize
 probe
+promo
 prone
 proof
 prose
+proud
 prove
 proxy
 psalm
@@ -733,10 +754,10 @@ ready
 realm
 rebel
 refer
+rehab
 reign
 relax
 relay
-remix
 renew
 repay
 reply
@@ -764,14 +785,17 @@ round
 route
 rover
 royal
+rugby
 ruler
 rumor
 rural
 rusty
 sadly
+safer
 saint
 salad
 salon
+salsa
 salty
 sandy
 sauce
@@ -942,6 +966,7 @@ suite
 sunny
 super
 surge
+sushi
 swamp
 swear
 sweat
@@ -989,6 +1014,7 @@ tidal
 tiger
 tight
 timer
+titan
 title
 toast
 today
@@ -1026,7 +1052,6 @@ trunk
 trust
 truth
 tumor
-turbo
 tutor
 tweet
 twice
@@ -1045,6 +1070,7 @@ upset
 urban
 usage
 usher
+using
 usual
 utter
 vague
@@ -1053,6 +1079,7 @@ value
 valve
 vapor
 vault
+vegan
 venom
 venue
 verge
@@ -1090,6 +1117,7 @@ while
 white
 whole
 whose
+wider
 widow
 width
 windy

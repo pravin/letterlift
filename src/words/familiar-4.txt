@@ -6,7 +6,7 @@ acne
 acre
 acts
 adds
-aero
+afar
 aged
 ages
 aide
@@ -34,6 +34,7 @@ aria
 arid
 arms
 army
+arts
 asks
 atom
 atop
@@ -58,6 +59,7 @@ ball
 band
 bang
 bank
+bans
 barb
 bard
 bare
@@ -80,6 +82,7 @@ beau
 beds
 beef
 been
+beep
 beer
 bees
 begs
@@ -96,13 +99,14 @@ bids
 bike
 bill
 bind
-bing
 bins
 bird
 bite
 bits
 blah
+blew
 bloc
+blog
 blow
 blue
 blur
@@ -123,7 +127,6 @@ bore
 born
 boss
 both
-bots
 bout
 bowl
 bows
@@ -138,6 +141,7 @@ brew
 brig
 brow
 buck
+buds
 buff
 bugs
 bulb
@@ -173,6 +177,7 @@ cart
 case
 cash
 cast
+cats
 cave
 cell
 cent
@@ -267,7 +272,9 @@ deem
 deep
 deer
 defy
+deli
 dell
+demo
 dent
 deny
 desk
@@ -300,6 +307,7 @@ doom
 door
 dorm
 dose
+dots
 dove
 down
 drag
@@ -343,11 +351,14 @@ else
 ends
 envy
 epic
+euro
 even
 ever
 evil
 exam
+exec
 exit
+expo
 eyed
 eyes
 face
@@ -359,6 +370,7 @@ fake
 fall
 fame
 fang
+fans
 fare
 farm
 fast
@@ -375,12 +387,14 @@ felt
 fest
 feud
 fiat
+fife
 figs
 file
 fill
 film
 find
 fine
+fins
 fire
 firm
 fish
@@ -456,6 +470,7 @@ glow
 glue
 goal
 goat
+gods
 goes
 gold
 golf
@@ -467,6 +482,7 @@ gown
 grab
 grad
 gram
+gran
 gray
 grew
 grey
@@ -480,6 +496,7 @@ gulf
 guns
 guru
 guts
+guys
 hack
 hail
 hair
@@ -489,6 +506,7 @@ hall
 halo
 halt
 hand
+hang
 hard
 hare
 harm
@@ -511,6 +529,7 @@ heck
 heed
 heel
 heir
+held
 helm
 help
 hemp
@@ -554,6 +573,7 @@ hunt
 hurt
 hush
 hymn
+hype
 iced
 icon
 idea
@@ -571,12 +591,16 @@ item
 jack
 jade
 jail
+jams
 jars
 jaws
+jays
 jazz
 jeep
+jeez
 jerk
 jets
+jobs
 join
 joke
 joys
@@ -596,6 +620,7 @@ kind
 king
 kiss
 kite
+kits
 kiwi
 knee
 knew
@@ -662,7 +687,6 @@ load
 loaf
 loan
 lobe
-loch
 lock
 loft
 logo
@@ -703,6 +727,7 @@ many
 maps
 mare
 mark
+mars
 mart
 mash
 mask
@@ -717,7 +742,9 @@ mean
 meat
 meek
 meet
+mega
 melt
+meme
 memo
 mend
 menu
@@ -725,7 +752,6 @@ mere
 mesa
 mesh
 mess
-meta
 mice
 mild
 mile
@@ -733,6 +759,7 @@ milk
 mill
 mind
 mine
+mini
 mint
 miss
 mist
@@ -740,12 +767,15 @@ mitt
 moan
 mock
 mode
+mods
 mold
 mole
+moms
 monk
 mono
 mood
 moon
+moor
 more
 moss
 most
@@ -767,7 +797,9 @@ neat
 neck
 need
 neon
+nerd
 nest
+nets
 news
 next
 nice
@@ -789,11 +821,14 @@ nuns
 nuts
 oaks
 oath
+oats
 obey
+odds
 odor
 offs
 oils
 oily
+okay
 once
 ones
 only
@@ -815,17 +850,20 @@ pack
 pact
 pads
 page
+paid
 pain
 pair
 pale
 palm
 pals
+pans
 papa
 park
 part
 pass
 past
 path
+pats
 pawn
 paws
 pays
@@ -877,6 +915,7 @@ pony
 pool
 poor
 pope
+pops
 pork
 port
 pose
@@ -886,6 +925,7 @@ pots
 pour
 pray
 prey
+prom
 prop
 pros
 pubs
@@ -914,6 +954,7 @@ rail
 rain
 rake
 ramp
+rams
 rang
 rank
 rant
@@ -922,10 +963,12 @@ rash
 rate
 rats
 rave
+rays
 read
 real
 reap
 rear
+reds
 reed
 reef
 reel
@@ -938,6 +981,7 @@ ribs
 rice
 rich
 ride
+riff
 rift
 ring
 rink
@@ -952,6 +996,7 @@ roar
 robe
 rock
 rode
+rods
 role
 roll
 roof
@@ -1003,6 +1048,7 @@ send
 sent
 sets
 shah
+sham
 shed
 shin
 ship
@@ -1079,6 +1125,7 @@ stud
 stun
 subs
 such
+sued
 suit
 sums
 sung
@@ -1089,10 +1136,13 @@ surf
 swam
 swan
 swap
+swat
 sway
 swim
 sync
+tabs
 tack
+taco
 tags
 tail
 take
@@ -1109,7 +1159,6 @@ task
 taxi
 team
 tear
-tech
 teen
 tees
 tell
@@ -1189,6 +1238,7 @@ user
 uses
 vain
 vale
+vans
 vary
 vase
 vast
@@ -1200,12 +1250,12 @@ very
 vest
 veto
 vets
+vibe
 vice
 view
 vile
 vine
 visa
-vita
 void
 volt
 vote
@@ -1226,6 +1276,7 @@ warp
 wars
 wary
 wash
+wasp
 watt
 wave
 ways
@@ -1248,12 +1299,14 @@ whom
 wick
 wide
 wife
+wiki
 wild
 will
 wind
 wine
 wing
 wink
+wins
 wipe
 wire
 wise

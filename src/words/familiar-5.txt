@@ -13,7 +13,6 @@ acute
 adapt
 added
 adept
-admin
 admit
 adobe
 adopt
@@ -117,6 +116,7 @@ basil
 basin
 basis
 batch
+baths
 baton
 beach
 beads
@@ -127,6 +127,7 @@ bears
 beast
 beats
 beers
+began
 begin
 begun
 beige
@@ -140,7 +141,9 @@ bench
 bends
 berry
 berth
+biker
 bikes
+bills
 binds
 binge
 bingo
@@ -164,7 +167,9 @@ blink
 bliss
 blitz
 block
+blogs
 bloke
+blond
 blood
 bloom
 blown
@@ -191,7 +196,9 @@ borne
 bound
 bowed
 bowls
+boxed
 boxer
+boxes
 brace
 brain
 brake
@@ -238,6 +245,7 @@ buyer
 cabin
 cable
 cache
+cadet
 cages
 cakes
 calls
@@ -248,6 +256,7 @@ canal
 candy
 canoe
 canon
+carbs
 cards
 cared
 cares
@@ -256,6 +265,7 @@ carol
 carry
 carts
 carve
+cases
 caste
 casts
 catch
@@ -338,10 +348,13 @@ coils
 coins
 colon
 color
+colts
+combo
 comes
 comet
 comfy
 comic
+condo
 cones
 cooks
 coral
@@ -374,6 +387,7 @@ creep
 crest
 crews
 cried
+cries
 crime
 crisp
 crook
@@ -413,6 +427,7 @@ debts
 debut
 decay
 decks
+decor
 deeds
 deity
 delay
@@ -432,6 +447,7 @@ diets
 digit
 diner
 dirty
+disco
 discs
 disks
 ditch
@@ -473,6 +489,7 @@ drops
 drove
 drown
 drums
+dryer
 ducks
 dudes
 dummy
@@ -499,6 +516,8 @@ elder
 elect
 elite
 elves
+email
+emery
 empty
 enact
 ended
@@ -516,6 +535,7 @@ essay
 ether
 ethic
 ethos
+euros
 evade
 event
 every
@@ -549,17 +569,21 @@ farms
 fatal
 fatty
 fault
+fauna
 favor
 fears
 feast
 feeds
 feels
+fella
 fence
 ferry
 fetal
 fetch
 fever
+fewer
 fiber
+fibre
 field
 fiery
 fifth
@@ -594,6 +618,7 @@ flaws
 fleet
 flesh
 flick
+flies
 fling
 flint
 flirt
@@ -634,6 +659,7 @@ freak
 freed
 fresh
 fried
+fries
 frogs
 front
 frost
@@ -642,6 +668,7 @@ fruit
 fudge
 fuels
 fully
+fumes
 funds
 fungi
 funky
@@ -650,6 +677,7 @@ furry
 fused
 fuzzy
 gains
+gamer
 games
 gamma
 gangs
@@ -662,6 +690,7 @@ genes
 genie
 genre
 genus
+germs
 ghost
 giant
 gifts
@@ -728,6 +757,7 @@ hairy
 halls
 hands
 handy
+hangs
 happy
 hardy
 harsh
@@ -753,9 +783,11 @@ hedge
 heels
 hefty
 heirs
+heist
 hello
 helps
 hence
+herbs
 hides
 highs
 hikes
@@ -790,8 +822,9 @@ humor
 hunts
 hurry
 hurts
-hydro
+hydra
 hymns
+hyped
 hyper
 icing
 icons
@@ -800,8 +833,10 @@ ideas
 idols
 image
 imply
+inbox
 incur
 index
+indie
 inlet
 inner
 input
@@ -813,6 +848,7 @@ issue
 itchy
 items
 ivory
+jacks
 jeans
 jelly
 jewel
@@ -827,11 +863,11 @@ juicy
 jumbo
 jumps
 junta
-kappa
 karma
 keeps
 kicks
 kinds
+kings
 kitty
 knees
 knife
@@ -856,6 +892,7 @@ lasts
 latch
 later
 latex
+latte
 laugh
 layer
 leafs
@@ -889,7 +926,9 @@ liner
 lines
 links
 lions
+lists
 liter
+litre
 lived
 liver
 lives
@@ -906,6 +945,7 @@ logos
 looks
 loops
 loose
+lords
 loser
 loses
 lotus
@@ -923,6 +963,7 @@ lying
 lyric
 macro
 madam
+mafia
 magic
 mails
 mains
@@ -940,13 +981,13 @@ manly
 manor
 maple
 march
+marks
 marry
 marsh
 masks
 mason
 match
 mates
-maths
 matte
 maxim
 maybe
@@ -957,9 +998,11 @@ meant
 meats
 medal
 media
+medic
 meets
 melon
 melts
+memes
 menus
 mercy
 merge
@@ -968,6 +1011,8 @@ merry
 messy
 metal
 meter
+metre
+metro
 micro
 midst
 might
@@ -985,6 +1030,7 @@ mixed
 mixer
 mixes
 model
+modem
 modes
 moist
 mommy
@@ -996,7 +1042,6 @@ moody
 moons
 moose
 moral
-morse
 motel
 motif
 motor
@@ -1024,15 +1069,19 @@ names
 nanny
 nasal
 nasty
+natal
 naval
 necks
 needs
 needy
+nerds
 nerve
 nests
 never
+newer
 newly
 nexus
+nicer
 niche
 niece
 night
@@ -1041,6 +1090,7 @@ noble
 nodes
 noise
 noisy
+norms
 north
 noses
 notch
@@ -1083,6 +1133,7 @@ ozone
 paced
 packs
 pagan
+pages
 pains
 paint
 pairs
@@ -1095,12 +1146,15 @@ papal
 paper
 parks
 parry
+parts
 party
+pasta
 paste
 patch
 paths
 patio
 pause
+paved
 peace
 peach
 peaks
@@ -1111,6 +1165,7 @@ penal
 pence
 penny
 peril
+perks
 pests
 petty
 phase
@@ -1129,12 +1184,12 @@ pills
 pilot
 pinch
 pines
-pinky
 pious
 piper
 pipes
 pitch
 pivot
+pixel
 pizza
 place
 plaid
@@ -1157,10 +1212,12 @@ point
 poker
 polar
 poles
+polls
 ponds
 pools
 poppy
 porch
+pores
 ports
 posed
 poses
@@ -1179,10 +1236,12 @@ prism
 privy
 prize
 probe
+promo
 prone
 proof
 props
 prose
+proud
 prove
 proxy
 psalm
@@ -1239,6 +1298,7 @@ recap
 reefs
 refer
 regal
+rehab
 reign
 reins
 relax
@@ -1253,6 +1313,7 @@ reply
 reset
 resin
 rests
+retro
 reuse
 rhino
 rhyme
@@ -1286,6 +1347,7 @@ roles
 rolls
 roofs
 rooms
+roots
 ropes
 roses
 rotor
@@ -1295,6 +1357,7 @@ round
 route
 rover
 royal
+rugby
 ruins
 ruled
 ruler
@@ -1304,11 +1367,13 @@ rural
 rusty
 sacks
 sadly
+safer
 sails
 saint
 salad
 sales
 salon
+salsa
 salts
 salty
 sands
@@ -1335,6 +1400,7 @@ scout
 scrap
 screw
 scrub
+scuba
 seals
 seams
 seats
@@ -1485,6 +1551,7 @@ spend
 spent
 spice
 spicy
+spies
 spike
 spill
 spine
@@ -1514,6 +1581,7 @@ stamp
 stand
 stare
 stark
+stars
 start
 stash
 state
@@ -1565,6 +1633,7 @@ suits
 sunny
 super
 surge
+sushi
 swamp
 swans
 swarm
@@ -1586,6 +1655,7 @@ synod
 syrup
 table
 taboo
+tacos
 tails
 taken
 takes
@@ -1607,10 +1677,12 @@ teach
 teams
 tears
 tease
+teddy
 teens
 teeth
 tells
 tempo
+temps
 tends
 tenor
 tense
@@ -1649,6 +1721,7 @@ timer
 times
 tired
 tires
+titan
 title
 toast
 today
@@ -1734,6 +1807,7 @@ urges
 usage
 users
 usher
+using
 usual
 utter
 vague
@@ -1742,6 +1816,7 @@ value
 valve
 vapor
 vault
+vegan
 veins
 venom
 vents
@@ -1749,6 +1824,7 @@ venue
 verbs
 verge
 verse
+vibes
 vicar
 video
 views
@@ -1767,7 +1843,9 @@ vivid
 vocal
 vogue
 voice
+voted
 voter
+votes
 vowed
 vowel
 wager
@@ -1782,11 +1860,13 @@ waltz
 wants
 wards
 warns
+wasps
 waste
 watch
 water
 watts
 waved
+waves
 wears
 weary
 weave
@@ -1807,8 +1887,11 @@ while
 white
 whole
 whose
+wider
 widow
 width
+wills
+winds
 windy
 wines
 wings
@@ -1819,6 +1902,8 @@ wires
 wiser
 witch
 witty
+wives
+woken
 woman
 woods
 woody
@@ -1846,6 +1931,7 @@ years
 yeast
 yells
 yield
+yikes
 young
 yours
 youth

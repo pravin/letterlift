@@ -7,28 +7,31 @@ For length N it writes:
   src/words/common-N.txt    words a puzzle may start or end on
 
 Sources:
-  - Webster's Second International Dictionary (1934, public domain), shipped
-    as /usr/share/dict/web2 on macOS and the BSDs. Only lowercase entries are
-    used, which leaves out proper nouns.
+  - SCOWL (Spell Checker Oriented Word Lists) by Kevin Atkinson, the lists
+    behind Debian's /usr/share/dict/words. English, American and British
+    words up to size 60 are used. SCOWL keeps proper nouns in separate lists,
+    so its word lists are lowercase dictionary words. See
+    src/words/SCOWL-Copyright.txt.
   - The `wordfreq` package, used only to rank words by how common they are.
-  - /usr/share/dict/propernames, to keep first names out of puzzles.
-
-A word is allowed if it is a web2 entry, or a simple inflection of one
-("cats", "dared"), and is not vanishingly rare. Puzzle endpoints must also be
-common base words, and not in EXCLUDE.
+  - /usr/share/dict/propernames (macOS, BSDs), if present, to keep first names
+    out of puzzles.
 
 Usage:
     pip install wordfreq
-    python scripts/build-words.py [/usr/share/dict/web2]
+    # download and unpack https://downloads.sourceforge.net/project/wordlist/SCOWL/2020.12.07/scowl-2020.12.07.tar.gz
+    python scripts/build-words.py path/to/scowl-2020.12.07
 """
 
+import shutil
 import sys
 from pathlib import Path
 
 from wordfreq import zipf_frequency
 
 LENGTHS = (4, 5)
-MIN_ZIPF_ALLOWED = 2.0
+MAX_LEVEL_ALLOWED = 60  # SCOWL size: 60 is the usual spell-checker list
+MAX_LEVEL_FAMILIAR = 55
+MAX_LEVEL_COMMON = 50
 MIN_ZIPF_FAMILIAR = 3.3
 MIN_ZIPF_COMMON = 3.5
 MIN_ZIPF_BASE = 3.0  # "cats" counts as a plural because "cat" is a common word
@@ -48,11 +51,11 @@ EXCLUDE = SLURS | {
     "whore", "bitch", "boner", "booty", "feces", "horny", "penis", "porno", "pubic",
     "pussy", "queer", "semen", "sperm", "urine", "vomit", "bowel", "groin", "gypsy",
     "nude", "cunt", "wank", "lynch", "pimp", "drug", "drugs", "dead", "death", "slay",
-    "suicide", "gore", "corpse", "jihad", "kinky", "butch",
+    "suicide", "gore", "corpse", "jihad", "kinky", "butch", "milf",
 }
 
-# Never a start or end: names, places, brands, abbreviations and contractions
-# that the dictionary also lists in lowercase
+# Never a start or end: names, places, brands, abbreviations and slang that
+# the dictionary also lists in lowercase, and words unsuited to a casual game
 NOT_ENDPOINTS = {
     "alec", "bach", "bali", "baba", "bong", "brit", "cain", "carr", "cass", "chad",
     "coca", "coke", "corp", "dong", "dont", "dope", "hong", "howe", "holt", "indy",
@@ -66,6 +69,9 @@ NOT_ENDPOINTS = {
     "riley", "ryder", "sammy", "satan", "silva", "singh", "swiss", "tibet", "walsh",
     "weber", "willy", "yahoo", "benny", "dutch", "welsh", "trump", "slave", "idiot",
     "moron", "prick", "fetus", "obese", "booze", "vodka", "drunk", "dying", "paddy",
+    "dunno", "gimme", "gonna", "gotta", "kinda", "wanna", "multi", "intel", "hicks",
+    "bible", "wales", "thru", "info", "apps", "stats", "mama", "oops", "sans", "feet",
+    "women",
 }
 
 # Never in par routes or hints: names, slang, abbreviations and archaic words
@@ -77,7 +83,14 @@ NOT_FAMILIAR = {
     "shea", "mets", "mens", "vols", "sans", "noir", "aires", "blanc", "bosch", "cheng",
     "ching", "cisco", "garth", "hayes", "julio", "kraft", "levin", "paolo", "reese",
     "rowan", "sloan", "wally", "wigan", "whats", "thats", "crore", "mamma", "mater",
-    "shalt", "prima", "buffy",
+    "shalt", "prima", "buffy", "fanny", "gaga", "lulu", "ting", "sims", "sears", "johns",
+    "bates", "mecca", "outta",
+}
+
+# Real words SCOWL only has in its larger, name-heavy sizes
+EXTRA_ALLOWED = {
+    "snuck", "melee", "maths", "loch", "chai", "merch", "diss", "ramen", "apnea", "orca",
+    "luxe", "tiki",
 }
 
 # Words in the system's first-names list that are also ordinary words
@@ -97,13 +110,28 @@ NOT_PAST_TENSE = {"seed", "shed", "feed", "need", "deed", "bred", "fled", "sled"
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def load_scowl(scowl: Path) -> dict[str, int]:
+    """Lowercase SCOWL words mapped to the smallest size level that has them."""
+    levels: dict[str, int] = {}
+    for path in (scowl / "final").glob("*-words.*"):
+        variety, level = path.name.split("-words.")
+        if variety not in ("english", "american", "british") or int(level) > MAX_LEVEL_ALLOWED:
+            continue
+        for word in path.read_text(encoding="latin-1").split():
+            if word.isascii() and word.isalpha() and word.islower():
+                levels[word] = min(levels.get(word, 99), int(level))
+    return levels
+
+
 def main() -> None:
-    dict_path = Path(sys.argv[1] if len(sys.argv) > 1 else "/usr/share/dict/web2")
-    raw = dict_path.read_text().split()
-    entries = {w for w in raw if w.isalpha() and w.islower()}
-    # Words the dictionary also lists capitalised are often names or places
-    capitalised = {w.lower() for w in raw if w[:1].isupper()}
-    names_path = dict_path.with_name("propernames")
+    if len(sys.argv) != 2:
+        sys.exit(__doc__)
+    scowl = Path(sys.argv[1])
+    level = load_scowl(scowl)
+    for word in EXTRA_ALLOWED:
+        level.setdefault(word, MAX_LEVEL_ALLOWED)
+    entries = set(level)
+    names_path = Path("/usr/share/dict/propernames")
     names = set()
     if names_path.exists():
         names = {w.lower() for w in names_path.read_text().split()} - NAMES_TO_KEEP
@@ -125,22 +153,20 @@ def main() -> None:
         if not w.endswith("s") or w.endswith("ss"):
             return False
         bases = [w[:-1]] + ([w[:-2]] if w.endswith("es") else [])
+        if w.endswith("ies"):
+            bases.append(w[:-3] + "y")  # fly -> flies
+        if w.endswith("ves"):
+            bases += [w[:-3] + "f", w[:-3] + "fe"]  # wolf -> wolves, wife -> wives
         return any(b in entries and zipf(b) >= MIN_ZIPF_BASE for b in bases)
 
     out = ROOT / "src" / "words"
     out.mkdir(parents=True, exist_ok=True)
+    blocked = EXCLUDE | NOT_ENDPOINTS | NOT_FAMILIAR | names
     for n in LENGTHS:
-        candidates = {w for w in entries if len(w) == n}
-        candidates |= {
-            b + s for b in entries for s in ("s", "es", "ed", "d") if len(b) + len(s) == n
-        }
-        allowed = sorted(
-            w for w in candidates
-            if w.isascii() and zipf(w) >= MIN_ZIPF_ALLOWED and w not in SLURS
-        )
+        allowed = sorted(w for w in entries if len(w) == n and w not in SLURS)
         common = [
             w for w in allowed
-            if w in entries and zipf(w) >= MIN_ZIPF_COMMON
+            if zipf(w) >= MIN_ZIPF_COMMON and level[w] <= MAX_LEVEL_COMMON
             and w not in EXCLUDE and w not in NOT_ENDPOINTS and w not in names
             and not is_plural(w) and not is_past_tense(w)
         ]
@@ -149,27 +175,19 @@ def main() -> None:
         def is_familiar(w: str) -> bool:
             if w in common_set:
                 return True
-            blocked = EXCLUDE | NOT_ENDPOINTS | NOT_FAMILIAR | names
-            if zipf(w) < MIN_ZIPF_FAMILIAR or w in blocked:
+            if zipf(w) < MIN_ZIPF_FAMILIAR or level[w] > MAX_LEVEL_FAMILIAR or w in blocked:
                 return False
             # Nor any form of an excluded word ("raped", "pimps")
-            if any(w[:-k] in EXCLUDE for k in (1, 2, 3)):
-                return False
-            if w in entries:
-                return w not in capitalised
-            # An inflection ("cats", "dyed") is familiar only if its base word is
-            return any(
-                w.endswith(suffix) and w[: -len(suffix)] in entries
-                and zipf(w[: -len(suffix)]) >= MIN_ZIPF_FAMILIAR
-                and w[: -len(suffix)] not in capitalised | blocked
-                for suffix in ("es", "s", "ed", "d")
-            )
+            return not any(w[:-k] in EXCLUDE for k in (1, 2, 3))
 
         familiar = [w for w in allowed if is_familiar(w)]
         (out / f"allowed-{n}.txt").write_text("\n".join(allowed) + "\n")
         (out / f"familiar-{n}.txt").write_text("\n".join(familiar) + "\n")
         (out / f"common-{n}.txt").write_text("\n".join(common) + "\n")
         print(f"{n} letters: {len(allowed)} allowed, {len(familiar)} familiar, {len(common)} common")
+
+    # SCOWL's licence asks for its copyright notice to accompany the lists
+    shutil.copy(scowl / "Copyright", out / "SCOWL-Copyright.txt")
 
 
 if __name__ == "__main__":

@@ -153,7 +153,7 @@ mod tests {
     fn test_lists_load_for_every_length() {
         for length in LENGTHS {
             let dict = Dictionary::new(length).unwrap();
-            assert!(dict.word_count() > 3000);
+            assert!(dict.word_count() > 2500);
             assert!(dict.common().len() > 900);
         }
         assert!(Dictionary::new(3).is_err());
@@ -194,14 +194,14 @@ mod tests {
     #[test]
     fn test_familiar_routes_avoid_rare_words() {
         let dict = Dictionary::new(4).unwrap();
-        let coll = dict.index_of("coll").unwrap();
-        assert!(!dict.is_familiar(coll));
+        let coed = dict.index_of("coed").unwrap();
+        assert!(!dict.is_familiar(coed));
         for &w in dict.common() {
             assert!(dict.is_familiar(w), "{}", dict.word(w));
         }
         // A rare word is still reachable, as the last step
         let cold = dict.index_of("cold").unwrap();
-        assert_eq!(dict.distances_from(cold, true)[coll], 1);
+        assert_eq!(dict.distances_from(cold, true)[coed], 1);
     }
 
     #[test]

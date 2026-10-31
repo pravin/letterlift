@@ -45,7 +45,7 @@ jobs:
         run: |
           name="letterlift-${GITHUB_REF_NAME}-${{ matrix.target }}"
           mkdir "$name"
-          cp "target/${{ matrix.target }}/release/letterlift" README.md LICENSE "$name/"
+          cp "target/${{ matrix.target }}/release/letterlift" README.md LICENSE src/words/SCOWL-Copyright.txt "$name/"
           tar czf "$name.tar.gz" "$name"
           shasum -a 256 "$name.tar.gz" > "$name.tar.gz.sha256"
       - name: Package (windows)
@@ -54,7 +54,7 @@ jobs:
         run: |
           $name = "letterlift-$env:GITHUB_REF_NAME-${{ matrix.target }}"
           New-Item -ItemType Directory $name | Out-Null
-          Copy-Item "target/${{ matrix.target }}/release/letterlift.exe", README.md, LICENSE $name
+          Copy-Item "target/${{ matrix.target }}/release/letterlift.exe", README.md, LICENSE, src/words/SCOWL-Copyright.txt $name
           Compress-Archive -Path $name -DestinationPath "$name.zip"
           $hash = (Get-FileHash "$name.zip" -Algorithm SHA256).Hash.ToLower()
           [IO.File]::WriteAllText("$PWD/$name.zip.sha256", "$hash  $name.zip`n")
