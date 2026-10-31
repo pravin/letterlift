@@ -1,5 +1,10 @@
 # letterlift
 
+[![crates.io](https://img.shields.io/crates/v/letterlift.svg)](https://crates.io/crates/letterlift)
+[![CI](https://github.com/pravin/letterlift/actions/workflows/ci.yml/badge.svg)](https://github.com/pravin/letterlift/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/pravin/letterlift)](https://github.com/pravin/letterlift/releases/latest)
+[![License: GPL v3+](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
+
 **Climb from one word to another, one letter at a time, right in your terminal.**
 
 letterlift is a free, open-source word-ladder puzzle. Turn `GLOW` into `CLUE` by changing one
@@ -25,6 +30,19 @@ A sister game to [letterlock](https://github.com/pravin/letterlock).
 - Runs natively on Linux, macOS and Windows (x86_64 and ARM64), with nothing else to install
 
 ## Install
+
+**macOS / Linux** with [Homebrew](https://brew.sh):
+
+```sh
+brew install pravin/tap/letterlift
+```
+
+**Windows** with [Scoop](https://scoop.sh):
+
+```powershell
+scoop bucket add pravin https://github.com/pravin/scoop-bucket
+scoop install letterlift
+```
 
 **Any platform** with [Rust](https://rustup.rs):
 
@@ -131,6 +149,10 @@ Changing the lists changes which puzzle each number and date produces.
 3. The [Release workflow](.github/workflows/release.yml) builds binaries for Linux, macOS and
    Windows (x86_64 and ARM64) and publishes a GitHub release with checksums.
 4. Publish to crates.io: `cargo publish`.
+5. Update the package managers with the new version and the SHA-256 values from the release's
+   `.sha256` files:
+   - Homebrew: `Formula/letterlift.rb` in [pravin/homebrew-tap](https://github.com/pravin/homebrew-tap)
+   - Scoop: `bucket/letterlift.json` in [pravin/scoop-bucket](https://github.com/pravin/scoop-bucket)
 
 To test the builds without publishing, run the Release workflow manually from the Actions tab.
 
