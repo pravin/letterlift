@@ -1,6 +1,6 @@
 [package]
 name = "letterlift"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Pravin Paratey"]
 description = "A free word-ladder puzzle for the terminal: change one letter at a time to reach the goal"
 edition = "2021"
